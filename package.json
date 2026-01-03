@@ -6,6 +6,9 @@
     "start": "concurrently \"npm run start:api\" \"npm run start:app\"",
     "start:api": "cd api && npm run dev",
     "start:app": "cd app && npm run dev",
+    "build": "cd app && npm run build",
+    "build:api": "cd api && npx prisma generate",
+    "build:all": "npm run build:api && npm run build",
     "install:all": "npm install && cd api && npm install && cd ../app && npm install"
   },
   "keywords": [],
