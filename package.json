@@ -1,0 +1,21 @@
+{
+  "name": "employment-task-app",
+  "version": "1.0.0",
+  "description": "Full-stack app with Node.js, React, PostgreSQL, and Prisma",
+  "scripts": {
+    "start": "concurrently \"npm run start:api\" \"npm run start:app\"",
+    "start:api": "cd api && npm run dev",
+    "start:app": "cd app && npm run dev",
+    "install:all": "npm install && cd api && npm install && cd ../app && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
